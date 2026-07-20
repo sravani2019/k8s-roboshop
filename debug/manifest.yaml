@@ -10,6 +10,6 @@ metadata:
 spec: 
   containers:
   - name: debug
-    image: sravani3093/debug:4.4.0
+    image: sravani3093/debug:4.0.0
  #to login to the pod
  #kubectl exec -it nginx -- bash
