@@ -41,8 +41,18 @@ spec:
           httpGet:
             path: /health
             port: liveness-port
-          failureThreshold: 30
-           periodSeconds: 10
+          failureThreshold: 12
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: liveness-port
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: liveness-port
+          periodSeconds: 10
         envFrom:
         - configMapRef:
             name: shipping
