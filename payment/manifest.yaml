@@ -19,7 +19,7 @@ type: opaque
 data:
   AMQP_USER: cm9ib3Nob3AK
   AMQP_PASS: cm9ib3Nob3AxMjMK
-===
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
