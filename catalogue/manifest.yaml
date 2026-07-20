@@ -35,7 +35,7 @@ spec:
       - name: catalogue
         image: sravani3093/catalogue:4.0.0
         envFrom:
-        - configMapRef:
+        - ConfigMapRef:
           name: catalogue
 ---
 apiVersion: v1
